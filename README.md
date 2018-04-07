@@ -1,4 +1,6 @@
-## HOKRAS Wordpress
+## Wordpress Website
+
+Wordpress docker setup with s3 backup and restore feature
 
 ### Setup
 
@@ -53,6 +55,3 @@ export WP_EMAIL=
 ```
   ./bin/reload.sh hard && ./bin/restore.sh && ./bin/reload.sh
 ```
-
-### Notes
-- [Transfer wordpress website from docker to webhost](http://www.wpexplorer.com/migrating-wordpress-website/)
