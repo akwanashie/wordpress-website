@@ -6,7 +6,7 @@ source "$DIR/../../.env"
 OPTION=$1
 if [ "$OPTION" = "hard" ]; then
   echo "Sorry also deleting the data..."
-  docker-compose -p $APP_NAME down -v
+  cd $DIR/../ && docker-compose -p $APP_NAME down -v
 else
-  docker-compose -p $APP_NAME down
+  cd $DIR/../ && docker-compose -p $APP_NAME down
 fi

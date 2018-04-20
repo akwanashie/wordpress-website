@@ -3,4 +3,4 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source "$DIR/../../.env"
 
-docker-compose -p $APP_NAME up -d
+cd $DIR/../ && docker-compose -p $APP_NAME up -d
